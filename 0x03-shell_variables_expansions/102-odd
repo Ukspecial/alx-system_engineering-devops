@@ -1,2 +1,2 @@
 #!/bin/bash
-cat -n | grep [1357][[:space:]] | tr -s '' | cut -f2
+sed -n '1p;0~3p' input.txt
